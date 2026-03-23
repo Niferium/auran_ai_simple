@@ -1,0 +1,4 @@
+# Ignore config file
+config.py
+conversations
+__pycache__
