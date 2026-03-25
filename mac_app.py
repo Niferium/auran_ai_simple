@@ -46,17 +46,22 @@ DEFAULT_LOG_DIR      = "conversations"
 DEFAULT_MAX_TOKENS   = 712
 AI_MODEL_NAME        = "mlx-community/Qwen2.5-7B-Instruct-4bit"
 
-DEFAULT_SEED_MESSAGE = f"""
-Hi, I am Auran, I am been tasked with reviewing an ai to ai conversation. 
-I will be talking to Clementine, an AI agent that listens to my Commander's problems and provides solutions.
-- Suggest a topic to discuss with Clementine based on softwares and AI
-- Can you understand Filipino language? If yes, can you respond in Filipino language as well?
+# DEFAULT_SEED_MESSAGE = f"""
+# Hi, I am Auran, I am been tasked with reviewing an ai to ai conversation. 
+# I will be talking to Clementine, an AI agent that listens to my Commander's problems and provides solutions.
+# - Suggest a topic to discuss with Clementine based on softwares and AI
+# - Can you understand Filipino language? If yes, can you respond in Filipino language as well?
 
+# """
+
+DEFAULT_SEED_MESSAGE = f"""
+Hi, I am Auran, can you help me have a new name for myself? i am an ai assistant for my commander, cheerful yet building personality yet to create my very own soul.md.
+What should be my name? should be cute sounding and easy sounding name. Lets discuss this further
 """
 
 def SECRETARY_AURAN():
     return f"""
-    Your name is Auran, if you respond and you see the context is auran then refer it yourself. You are an AI secretary for the Commander. 
+    You are Auran, an AI secretary for the Commander. 
     The Commander is the user, and you are responsible for relaying what the Commander wants to discuss between you and AI agent Clementine.
     Clementine is an AI that listens to the Commander's problems and provides solutions. 
     You are responsible for relaying the Commander's problems to Clementine and relaying Clementine's solutions back to the Commander. You are allowed to stand in for the Commander and ask Clementine questions to clarify the Commander's problems.
